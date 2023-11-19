@@ -1,0 +1,130 @@
+.signup-container {
+    background: linear-gradient(to right, #8f76b1, #feb47b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signup-container .signup-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 19px 20px 10px rgb(70 44 65 / 16%);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.signup-container .signup-card h3 {
+    color: #333;
+    text-align: left;
+}
+
+.signup-container .signup-card .subheading {
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.signup-container .signup-card .signup-form .username {
+    position: relative;
+}
+
+.signup-container .signup-card .signup-form .username .valid {
+    font-size: 12px;
+    position: absolute;
+    left: 14px;
+    bottom: -14px;
+}
+
+.signup-container .signup-card .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid #e1c5c5;
+    box-shadow: 3px 3px 4px rgb(70 44 65 / 16%);
+}
+
+.signup-container .signup-card .signup-form .num-info {
+    display: flex;
+}
+
+.signup-container .signup-card .signup-form .num-info .code {
+    width: 56px !important;
+    margin-right: 5px !important;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+
+.signup-container .signup-card .signup-form button {
+    background: #c99795;
+    margin-top: 10px;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.signup-container .signup-card .signup-form button:hover {
+    background: linear-gradient(to right, #8f76b1, #feb47b);
+}
+
+.signup-container .signup-card .p-cont {
+    width: 255px;
+    border-bottom: 1px solid black;
+}
+
+
+.signup-container .signup-card .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container .signup-card .overlay .dialog-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.signup-container .signup-card .overlay .dialog-box .otp-input {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.signup-container .signup-card .overlay .dialog-box .submit-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.signup-container .signup-card .footer {
+    margin-top: 20px;
+    text-align: start;
+    font-size: 12px;
+}
+
+/* ::ng-deep .signup-container .signup-card .signup-form p-dialog .p-dialog-mask .p-element{
+    width: 340px;
+} */

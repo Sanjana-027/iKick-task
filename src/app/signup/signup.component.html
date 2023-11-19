@@ -1,0 +1,40 @@
+<div class="signup-container">
+    <div class="signup-card">
+        <h3>Welcome!</h3>
+        <p class="subheading">Please Enter Your Details</p>
+        <form class="signup-form" [formGroup]="signupForm">
+            <div class="username" style="margin-bottom: 15px;">
+                <input type="text" formControlName="username" placeholder="Enter Username" (keyup)="checkUsername()"
+                    required>
+                <p class="valid">{{ validUsername }}</p>
+            </div>
+
+            <input type="password" formControlName="password" placeholder="Enter Password" required>
+            <input type="email" formControlName="email" placeholder="@gmail.com" name="Email">
+
+            <div class="num-info">
+                <input type="tel" class="code" formControlName="phCode" placeholder="code" name="phone">
+                <input type="tel" class="ph" formControlName="phNo" placeholder="Enter Ph No." name="phone">
+
+            </div>
+            <button type="button" id="signupButton" (click)="verifyOTP()">Sign Up</button>
+
+            <p-dialog header="Enter OTP" [(visible)]="otpDialogue" [style]="{width: '340px'}">
+                <input type="text">
+                <button (click)="validateOTP()">Verify OTP</button>
+            </p-dialog>
+            <p-dialog header="Enter OTP" [(visible)]="successDialogue" [style]="{width: '340px'}">
+                <p>OTP verification successful! </p>
+                <button (click)="signUpConfirm()">Please Continue!</button>
+            </p-dialog>
+            <p-dialog header="Enter OTP" [(visible)]="errorDialogue" [style]="{width: '340px'}">
+                <p>OTP verification failed! </p>
+                <button (click)="signUpFailed()">Please Try Again!</button>
+            </p-dialog>
+
+        </form>
+        <div class="footer">
+            <p>Already have an account? <a routerLink="/login">Login</a></p>
+        </div>
+    </div>
+</div>
